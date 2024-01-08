@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">password-manager</string>
+    <string name="set_master_password">Set master password</string>
+    <string name="platform">Platform</string>
+    <string name="password">Password</string>
+    <string name="generate_password">Generate password</string>
+</resources>
