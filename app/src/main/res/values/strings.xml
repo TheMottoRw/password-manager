@@ -1,7 +1,20 @@
 <resources>
-    <string name="app_name">password-manager</string>
+    <string name="app_name">Password manager</string>
     <string name="set_master_password">Set master password</string>
     <string name="platform">Platform</string>
     <string name="password">Password</string>
     <string name="generate_password">Generate password</string>
+    <string name="email">Email</string>
+    <string name="save">Save</string>
+    <string name="update_password">Update password</string>
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="master_password">Master password</string>
+    <string name="unlock">Unlock</string>
+    <string name="teaser">Eliminate password reuse with the built-in password generator</string>
+    <string name="unlock_fail">Unlocking failed</string>
+    <string name="unlock_success">Unlocking succeed</string>
+    <string name="add_new_password">Add new password</string>
+    <string name="update_master_password">Update master password</string>
+    <string name="confirm_password">Confirm password</string>
 </resources>

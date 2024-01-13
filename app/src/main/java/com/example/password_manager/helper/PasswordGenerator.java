@@ -1,4 +1,4 @@
-package com.example.password_manager;
+package com.example.password_manager.helper;
 
 import java.util.ArrayList;
 import java.util.List;

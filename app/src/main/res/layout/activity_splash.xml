@@ -11,17 +11,104 @@
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:orientation="vertical"
-        android:background="@drawable/main_bg_top_down"></LinearLayout>
-    <Button
+        android:background="@drawable/main_bg_top_down"
+        >
+        <LinearLayout
+            android:id="@+id/lnyLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/security"
+            android:background="@drawable/round_border"
+            android:layout_gravity="center"/>
+        <TextView
+            style="@style/header_style"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            />
+        </LinearLayout>
+        <TextView
+            style="@style/teaser_style"
+            android:text="@string/teaser"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnySetMasterPassword"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:background="@drawable/button_bg"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+    <TextView
+        style="@style/text_style"
+        android:text="@string/master_password"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        style="@style/edit_text_style"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:tint="@color/dark_blue"
+        android:text="@string/save"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/dark_blue"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="18sp"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnySetMasterPasswordUnlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+        <TextView
+            style="@style/text_style"
+            android:text="@string/master_password"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtPasswordUnlock"
+            style="@style/edit_text_style"
+            android:inputType="textPassword" />
+        <Button
+            android:id="@+id/btnUnlock"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:tint="@color/dark_blue"
+            android:text="@string/unlock"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/dark_blue"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnSetMasterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:tint="@color/dark_blue"
         android:text="@string/set_master_password"
         android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/dark_blue"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         />
 
 </LinearLayout>
